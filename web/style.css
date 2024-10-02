@@ -13,13 +13,22 @@ body {
     color: #284ca7;
     /* text-decoration: underline;  */
 }
-.navbar-brand img {
-    
+
+.nav-item .active {
+    border-bottom: 2px solid #01609A;
+}
+.navbar{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .carousel-item img {
     height: 500px;
     object-fit: cover;
+    transition: filter 0.3s ease;
+    filter: brightness(0.9);
 }
+.carousel-item img:hover {
+    filter: brightness(1);
+  }
 
 .slide3, title3{
     color: white;
@@ -56,19 +65,51 @@ body {
 .btn-logout:hover {
     background-color: #a7525b;
 }
+.btn-login, .btn-logout {
+    transition: transform 0.3s ease;
+  }
+  .btn-login:hover, .btn-logout:hover {
+    transform: scale(1.1);
+  }
 
 .form-container{
    
-        max-width: px; /* Adjust this width as needed */
-        margin: 0 auto; /* Center the form */
-        padding: 20px; /* Add some padding */
-        background-color: #f8f9fa; /* Optional: Background color */
-        border: 1px solid #ced4da; /* Optional: Border for the container */
-        border-radius: 8px; /* Optional: Rounded corners */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
     
 }
+.form-container:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+.form-control {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+}
+.form-control:focus {
+    border-color: #0279B0;
+    box-shadow: 0 0 8px rgba(2, 121, 176, 0.2);
+}
+.btn-primary {
+    background-color: #01609A;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0279B0;
+    transform: scale(1.05);
+}
 
+.container{
+    padding: 30px;
+}
 footer {
     text-align: center;
     font-size: 0.8rem;
