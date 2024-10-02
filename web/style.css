@@ -59,4 +59,6 @@ footer {
     text-align: center;
     font-size: 0.8rem;
     padding: 20px 0;
+    position: relative;
+    bottom: 0;
 }
