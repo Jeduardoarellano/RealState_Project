@@ -15,9 +15,9 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
+            <div class="container-fluid" id="navigation">
                 <a class="navbar-brand" href="index.html">
-                    <img src="/img/prime_vista-logo.png" alt="Logo">
+                    <img src="/web/img/prime_vista-logo.png"  alt="Logo" style="max-height: 80px; max-width: auto;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,6 @@
                     <a class="btn btn-login me-2" href="#">Login</a>
                     <a class="btn btn-logout" href="#">Logout</a>
                 </div>
-
             </div>
         </nav>
     </header>
@@ -51,59 +50,61 @@
 
     <main class="container my-4">
         <div class="d-flex justify-content-center align-items-center">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button> <!-- New button for Slide 4 -->
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active slide1">
+                        <img src="/web/img/bailey-anselme-Bkp3gLygyeA-unsplash.jpg" class="d-block w-100" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Beautiful Houses</h5>
+                            <p>"Discover beautiful homes available through our real estate company!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item slide2">
+                        <img src="/web/img/brian-babb-XbwHrt87mQ0-unsplash.jpg" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Modern Style</h5>
+                            <p>"Explore our collection of modern homes!"</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item slide3">
+                        <img src="/web/img/francesca-tosolini-lIVK3z606og-unsplash.jpg" class="d-block w-100" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="title3">Elegant Interiors That Inspire</h5>
+                            <p class="slide3">Step inside our homes and experience the beauty of modern living.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item slide4">
+                        <img src="/web/img/jens-behrmann-rU-R1Gx7RrI-unsplash.jpg" class="d-block w-100" alt="Slide 4">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>New Featured Property</h5>
+                            <p>Explore our newest listings featuring stunning views and modern designs.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/img/bailey-anselme-Bkp3gLygyeA-unsplash.jpg" class="d-block w-100" alt="Slide 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Beautiful Houses</h5>
-                        <p>"Discover beautiful homes available through our real estate company! Whether you're looking
-                            for a modern apartment or a spacious family house, we offer a range of stunning properties
-                            to suit every lifestyle. Find your dream home with us today!"</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/brian-babb-XbwHrt87mQ0-unsplash.jpg" class="d-block w-100" alt="Slide 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Modern Style</h5>
-                        <p>"Explore our collection of modern homes, featuring sleek architectural designs and stunning
-                            exteriors. From contemporary open spaces to beautifully landscaped yards, our properties
-                            offer the perfect blend of style and comfort. Find the perfect modern home for your
-                            lifestyle today!"</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/img/francesca-tosolini-lIVK3z606og-unsplash.jpg" class="d-block w-100" alt="Slide 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="title3">Elegant Interiors That Inspire</h5>
-                        <p class="slide3">Step inside our homes and experience the beauty of modern living. With
-                            high-end finishes, and thoughtfully designed spaces, each property offers a perfect blend of
-                            functionality and luxury. From sleek kitchens to cozy living areas. Discover your ideal home
-                            with interiors that truly inspire.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
         </div>
     </main>
+    
 
 
     <footer class="d-flex bg-light justify-content-center align-items-center">
